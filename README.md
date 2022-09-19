@@ -1,6 +1,6 @@
 # Reto-desarrollo-Python
 
-This REST API requires python 3.10+ and all the dependencies can be found int the requirements.txt file
+This REST API requires python 3.10+, MongoDB server and all the dependencies can be found int the requirements.txt file
 
 I decided to use a MongoDB database instead of a relational database, because we just have one entity, so we don't need to worry about relationships so let's take advantage of the high performance that offers a document-oriented database.
 
