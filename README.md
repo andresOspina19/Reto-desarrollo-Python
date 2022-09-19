@@ -18,3 +18,7 @@ For deployment could be used gunicorn but for development will be used uvicorn a
 uvicorn app:app
 
 To see the documentation of the API go to http://localhost:8000/docs
+
+To run the unit tests use the following command line:
+
+pytest
