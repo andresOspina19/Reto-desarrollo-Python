@@ -1,19 +1,27 @@
 from fastapi import APIRouter
+from typing import Optional
+from models.joke import getJokeOptions
+from config.db import connection
+from bson import ObjectId
 
 router = APIRouter()
 
-@router.get('/jokes/{value}')
-async def get_joke(value: str):
+@router.get('/jokes/', tags=["Jokes Methods"])
+def get_random_joke_from_local_database():
     pass
 
-@router.post('/jokes/')
-async def save_joke():
+@router.get('/jokes/{value}', tags=["Jokes Methods"])
+def get_joke(value: getJokeOptions):
     pass
 
-@router.put('/jokes/')
-async def update_joke():
+@router.post('/jokes/', tags=["Jokes Methods"])
+def save_joke():
     pass
 
-@router.delete('/jokes/')
-async def delete_joke():
+@router.put('/jokes/{}', tags=["Jokes Methods"])
+def update_joke():
+    pass
+
+@router.delete('/jokes/', tags=["Jokes Methods"])
+def delete_joke():
     pass

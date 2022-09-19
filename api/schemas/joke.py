@@ -1,6 +1,6 @@
 def localJokeEntity(item) -> dict:
     return {
-        "number": item["_id"],
+        "number": str(item["_id"]),
         "text": item["text"],
         "source": "local"
     }
