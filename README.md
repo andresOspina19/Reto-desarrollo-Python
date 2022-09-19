@@ -6,11 +6,12 @@ I decided to use a MongoDB database instead of a relational database, because we
 
 The design and development of this API was based on TDD (Test-driven development) and the structure is the following:
 
-- config: Configuration of the database
-- models: Pydantic models for request bodies
-- routes: Controllers  
-- schemas: Responses 
-- tests: Unit tests 
+- config/: Configuration of the database
+- models/: Pydantic models for request bodies
+- routes/: Controllers  
+- schemas/: Responses 
+- joke_test.py Unit tests for Joke controller 
+- mathematics_test.py Unit tests for Mathematics controller 
 - app.py: Main file
 
 For deployment could be used gunicorn but for development will be used uvicorn and to run the API use the following command line:
