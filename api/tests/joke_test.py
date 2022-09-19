@@ -1,16 +1,17 @@
 from fastapi.testclient import TestClient
-from app import app
+from api.app import app
 
 client = TestClient(app)
 
 def test_get_joke():
-    pass
+    assert 2 == 2
 
 def test_save_joke():
-    pass
+    assert 3 == 3
+    
 
 def test_update_joke():
-    pass
+    assert 4 == 4
 
 def test_delete_joke():
-    pass
+    assert 5 == 5

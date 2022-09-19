@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 #Importing the routes
-from routes import joke, mathematics
+from api.routes import joke, mathematics
 
 app = FastAPI()
 
